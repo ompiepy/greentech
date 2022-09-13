@@ -6,6 +6,7 @@ Social Impact League July-September 2022
 ## Introduction
 
 ## Team Name 
+**PLANTWIZARDS**
 
 ## Team Members
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PlantWizards</title>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        darkGreen: '#328704',
+                        lightGreen: '#98E8BC',
+                    },
+                    screens: {
+                        'sm': '400px'
+                    }
+                },
+            },
+        };
+
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+            localStorage.getItem('ieee-stecon-theme') === 'dark' ||
+            (!('ieee-stecon-theme' in localStorage) &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+
+</head>
+
+
+<body class="text-gray-500 dark:text-gray-400 dark:bg-gray-900">
+
+    <header>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <nav class="bg-darkGreen">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+
+                    </div>
+
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex flex-shrink-0 items-center">
+                            <img class="block h-8 w-auto lg:hidden"
+                                src="PlantWizards logo.png"
+                                alt="PlantWizards Logo">
+                            <img class="hidden h-8 w-auto lg:block"
+                                src="PlantWizards logo.png"
+                                alt="PlantWizards Logo">
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+                                <a href="#"
+                                    class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lm font-large">Plants</a>
+
+                                <a href="#"
+                                    class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lm font-large">Projects</a>
+
+                                <a href="#"
+                                    class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lm font-large">Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Mobile menu, show/hide based on menu state. -->
+                    <div class="sm:hidden" id="mobile-menu">
+                        <div class="space-y-1 px-2 pt-2 pb-3">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+                            <a href="#"
+                                class="text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-large">Plants</a>
+
+                            <a href="#"
+                                class="text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-large">Projects</a>
+
+                            <a href="#"
+                                class="text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-large">Calendar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+</body>
+
+</html>
