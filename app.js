@@ -1,4 +1,4 @@
-d3.csv("Database_plant_2.csv").then(function (data) {
+d3.csv("Final_Database_plant.csv").then(function (data) {
     
     var plant_details = data;
   
