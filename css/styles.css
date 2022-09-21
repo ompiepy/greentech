@@ -1697,7 +1697,7 @@ pre code {
 }
 .table {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
   color: #212529;
 }
 .table th,
@@ -10513,7 +10513,9 @@ iframe {
   min-width: 100%;
   min-height: 100%;
 }
-
+.footersection{
+  margin-top: 100rem;
+}
 /* Add some content at the bottom of the video/page */
 /* .content {
   position: fixed;
