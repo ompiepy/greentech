@@ -26,14 +26,7 @@
       },
     }
   </script>
-  <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  </script>
+
 </head>
 
 <body class="text-gray-500 dark:text-gray-400 dark:bg-gray-900">
@@ -43,7 +36,7 @@
 
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="index.html" class="flex items-center">
-          <img src="PlantWizards logo.png" class="mr-3 h-8 w-auto lg:block" alt="Flowbite Logo">
+          <img src="PlantWizards logo.png" class="mr-3 h-8 w-auto lg:block" aria-current="page" alt="Flowbite Logo">
           <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
@@ -60,30 +53,15 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
             class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+            <!-- <li>
               <a href="#" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-600 md:p-0 text-base"
                 aria-current="page">Plant</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#"
                 class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-600 md:border-0  md:p-0 text-base">About
                 Us</a>
-            </li>
-            <li>
-              <button id="theme-toggle" type="button"
-                class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm">
-                <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
-              </button>
             </li>
 
           </ul>
@@ -105,8 +83,77 @@
 
   </div>
 
+  <!-- Carousel Section -->
+
+
+  <div id="animation-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <!-- Item 1 -->
+      <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
+        <img src="images\Yarrow.jpg" class="object-scale-down absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10"
+        data-carousel-item="">
+        <img src="images\Wild Ginger.jpeg"
+          class="object-scale-down absolute block  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
+        data-carousel-item="active">
+        <img src="images\Narrowleaf Milkweed.jpg"
+          class="object-scale-down absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-full z-10"
+        data-carousel-item="">
+        <img src="images\Western Service Berry.jpg"
+          class="object-scale-down absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
+        <img src="images\Lemon Bottlebrush.jpg"
+          class="object-scale-down absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 6 -->
+      <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
+        <img src="images\Marina Strawberry Tree.jpg"
+          class="object-scale-down absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev="">
+      <span
+        class="bg-blue-700 inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-blue/700 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-300 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next="">
+      <span
+        class="bg-blue-700 inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-blue/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+
+  <!-- Carousel end -->
+
   <footer
-  class="footersection p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    class="footersection p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href=""
         class="hover:underline">PlantWizards</a>. All Rights Reserved.
     </span>
