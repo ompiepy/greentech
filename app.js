@@ -1,4 +1,4 @@
-d3.csv("Database_plant_2.csv").then(function (data) {
+d3.csv("Final_Database_plant.csv").then(function (data) {
     
     var plant_details = data;
   
@@ -35,8 +35,10 @@ d3.csv("Database_plant_2.csv").then(function (data) {
         // console.log(output[i]['original_title'])
         // console.log(output[i]['avg_vote'])
         // d3.select("tbody>tr>td").text(output[i]['original_title']);
+        let loc = output[i]['images']
+        
         d3.select("tbody").insert("tr").html("<td>"+[i+1]+"</td>"+"<td>"+"<a href=https://www.imdb.com/title/"+output[i]['imdb_title_id']+" target='_blank'>"+(output[i]['original_title'])+"</a>"
-        + "</td>" +"<td>" +(output[i]['bloom_time'])+"</td>" +"<td>" +(output[i]['suitable_site_conditions'])+"</td>"  +"<td>" +(output[i]['soil_type'])+"</td>"+"<td>" +(output[i]['climate_appropriate_plants'])+"</td>") }
+        + "</td>" +"<td>" +(output[i]['bloom_time'])+"</td>" +"<td>" +(output[i]['suitable_site_conditions'])+"</td>"  +"<td>" +(output[i]['soil_type'])+"</td>"+"<td>" +(output[i]['climate_appropriate_plants'])+"</td>"+"<td>" +"<img src=images/"+loc+" style='width:100px;height:100px;'>"+"</td>") }
     };
     window.resizeTo(screen.width,screen.height)
   
