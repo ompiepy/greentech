@@ -22,4 +22,12 @@ Social Impact League July-September 2022
 ## Current Challenges
 
 
+## Installation
+1. Install Python
+2. Add this in the terminal to create python server 
+   py -m http.server
+3. Go to the browser and write localhost:8000 and then click at the index2.html file to get the result.
+
+
+
 
