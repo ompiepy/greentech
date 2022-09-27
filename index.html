@@ -33,6 +33,9 @@
             inter: ['Inter', 'sans-serif'],
             poppins: ['Poppins', 'sans-serif'],
           },
+          backgroundImage: {
+            'hero': "url('tmp_805cf59c-6baf-413e-b1d8-66bfc5d90e65.jpg')"
+          },
           colors: {
             mintGreen: '#98FF98',
             lightGreen: '#98E8BC',
@@ -48,7 +51,7 @@
 
 
 <!--Body Layout-->
-<body class="text-gray-500 dark:text-gray-400 bg-mintGreen">
+<body class="text-gray-500 dark:text-gray-400 bg-mintGreen bg-hero">
 
   <header class="bg-mintGreen">
     <nav class=" border-gray-200 px-2 sm:px-4 rounded">
@@ -119,16 +122,15 @@
             <form id="form">
 
               <div class="input-group input-group-newsletter">
-
+                
                 <input class="form-control" id="user-input" placeholder="Enter plant name..."
                   aria-label="Enter email..." aria-describedby="submit-button" />
-                <br>
-                <br>
-                <br>
-                <br>
+                  <span>
+                    <i class="bi bi-geo-alt"></i></span>
+                  
                 <div class="boton input-group-append" id="boton">
                   <button
-                    class="mt-6 boton btn btn-secondary text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                    class="mt-20 boton btn btn-secondary text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                     type="button" id="button">Find Details!</button>
                 </div>
               </div>
@@ -142,7 +144,7 @@
 
 
             <!-- Card section 1 -->
-            <div class="container mx-auto p-0.5 grid grid-cols-4 gap-4">
+            <div class="mt-20 container mx-auto p-0.5 grid grid-cols-4 gap-4">
 
               <div
                 class="mt-6 mx-2 max-w-sm bg-white rounded-sm border border-gray-900 shadow-md dark:bg-gray-800 dark:border-gray-700">
