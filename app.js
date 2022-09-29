@@ -50,6 +50,7 @@ d3.csv("Final_Database_plant.csv").then(function (data) {
         "<td>" +(output[i]['bloom_time'])+"</td>" +
         "<td>" +(output[i]['suitable_site_conditions'])+"</td>"  +
         "<td>" +(output[i]['soil_type'])+"</td>"+
+        "<td>" +(output[i]['climate_appropriate_plants'])+"</td>"+
         "<td>" +(output[i]['water_needs (ml/day)'])+"</td>"+
         "<td>" +"<img src=images/"+loc+" style='width:100px;height:100px;' alt='No Image' >"+"</td>") }
     };
