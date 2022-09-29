@@ -47,7 +47,7 @@ d3.csv("Final_Database_plant.csv").then(function (data) {
         d3.select("tbody").insert("tr").html("<td>"+[i+1]+"</td>"+
         "<td>"+ (output[i]['latin_name']) +"</td>" +
         "<td>"+ (output[i]['common_name']) +"</td>" +
-        "<td>" +(output[i]['bloom_time'])+"</td>" +
+        // "<td>" +(output[i]['bloom_time'])+"</td>" +
         "<td>" +(output[i]['suitable_site_conditions'])+"</td>"  +
         "<td>" +(output[i]['soil_type'])+"</td>"+
         "<td>" +(output[i]['climate_appropriate_plants'])+"</td>"+
