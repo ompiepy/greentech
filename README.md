@@ -28,6 +28,9 @@ Social Impact League July-September 2022
 ![](./screenshots/homepage.png)
 ```Homepage```
 
+![](./screenshots/moreinfo.png)
+```More Info Page```
+
 - Provide information of the plants that can be cultivated indoor.
 
 - Motivate them to cultivate and nurture the plants.
