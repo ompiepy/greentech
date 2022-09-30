@@ -3,27 +3,27 @@ Social Impact League July-September 2022
 
 [Check out the Prototype here](https://nice-smoke-051dd3710.2.azurestaticapps.net/)
 
-## Team Name
+# Team Name
 ![](logo.jpg)
 
-## Team Members
+# Team Members
 
 [Aniq Javed](https://github.com/AniqJaved)
 
-[Chino.Ikwuegbu](https://github.com/slightlybae)
+[Chino Ikwuegbu](https://github.com/slightlybae)
 
 [Divit Mukhi](https://github.com/EncryptedBug)
 
 [Om Prakash Sharma](https://github.com/ompiepy)
 
 
-## Project Description
+# Project Description
 
 | Project Type      | *Prototype Sprint (Green Tech)* |
 | ----------- | ----------- |
 | Project Purpose      |    An WebApp so that people could be guided on how to grow plants which suits their needs and take the necessary care.    |
 
-## Project Features
+# Project Features
 
 ![](./screenshots/homepage.png)
 ```Homepage```
@@ -37,7 +37,7 @@ Social Impact League July-September 2022
 - Make aware about the health benefits of the indoor plants.
 
 
-## Future Changes
+# Future Changes
 
 - Suggest the plants that are suitable to cultivate according to the Location of the user.
 
@@ -48,6 +48,13 @@ Social Impact League July-September 2022
 - Integrate local vendors to supply the plants as per the requirement
 
 - Make the Web App available for mobile users
+
+# Links
+[Problem Research.md](./Problem%20Research.md)
+
+[Solution Identification.md](./Solution%20Identification.md) 
+
+[Prototype.md](./Prototype.md)
 
 
 
